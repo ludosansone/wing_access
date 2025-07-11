@@ -16,24 +16,24 @@
 </ctrltypes>
 
 <templates>
-  <page name="Channel {i}" tmpl="Channel {i} {j}">
+  <page name="Channel {i}" tmpl="Channel {i}">
     <ctrl type="label" name="Nom" nameosc="/ch/{i}/name"/>
     <ctrl type="toggle" name="Solo {i}" osc="/ch/{i}/solo" range="0,1,0,2"/>
     <ctrl type="toggle" name="Mute {i}" osc="/ch/{i}/mute" range="0,1,0,2"/>
     <ctrl type="AudioFader" name="Fader {i}" osc="/ch/{i}/fdr"/>
     <ctrl type="fader" name="Pan {i}" osc="/ch/{i}/pan" range="0.0,1.0,0.5,101" vtext="pan"/>
     <ctrl type="toggle" name="Phase {i} inversée" osc="/ch/{i}/cfg/inv" range="0,1,0,2"/>
-    <ctrl type="toggle" name="Link Channels {i}+{j}" osc="/ch/{i}/cfg/link" range="0,1,0,2"/>
+    <ctrl type="toggle" name="Link Channels {i}" osc="/ch/{i}/cfg/link" range="0,1,0,2"/>
   </page>
 </templates>
 
 <pages>
-  <page name="Channel {i}" tmpl="Channel {i} {j}" replace="{i}=1, {j}=2"/>
-  <page name="Channel {i}" replace="{i}=2,{j}=1"/>
-  <page name="Channel {i}" replace="{i}=3,{j}=4"/>
-  <page name="Channel {i}" replace="{i}=4,{j}=3"/>
-  <page name="Channel {i}" replace="{i}=5,{j}=6"/>
-  <page name="Channel {i}" replace="{i}=6,{j}=5"/>
-  <page name="Channel {i}" replace="{i}=7,{j}=8"/>
-  <page name="Channel {i}" replace="{i}=8,{j}=7"/>
+  <page name="Channel {i}" tmpl="Channel {i}" replace="{i}=1"/>
+  <page name="Channel {i}" replace="{i}=2"/>
+  <page name="Channel {i}" replace="{i}=3"/>
+  <page name="Channel {i}" replace="{i}=4"/>
+  <page name="Channel {i}" replace="{i}=5"/>
+  <page name="Channel {i}" replace="{i}=6"/>
+  <page name="Channel {i}" replace="{i}=7"/>
+  <page name="Channel {i}" replace="{i}=8"/>
 </pages>
