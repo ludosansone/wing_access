@@ -2,7 +2,7 @@
 
 <config>
   <osc>
-    <ping osc="/?" period="4000"/>
+    <ping osc="/xremote" period="4000"/>
   </osc>
   <options 
     explicit_feedback="yes"
@@ -21,7 +21,7 @@
     <ctrl type="toggle" name="Solo {i}" osc="/ch/{i}/solo" range="0,1,0,2"/>
     <ctrl type="toggle" name="Mute {i}" osc="/ch/{i}/mute" range="0,1,0,2"/>
     <ctrl type="AudioFader" name="Fader {i}" osc="/ch/{i}/fdr"/>
-    <ctrl type="fader" name="Pan {i}" osc="/ch/{i}/pan" range="0.0,1.0,0.5,101" vtext="pan"/>
+    <ctrl type="fader" name="Pan {i}" osc="/ch/{i}/pan" range="-100,100,0,201" vtext="pan"/>
     <ctrl type="toggle" name="Phase {i} inversée" osc="/ch/{i}/cfg/inv" range="0,1,0,2"/>
     <ctrl type="toggle" name="Link Channels {i}" osc="/ch/{i}/cfg/link" range="0,1,0,2"/>
   </page>
